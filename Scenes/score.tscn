@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccne3u78d6ufu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ndoay"]
+font_size = 60
+
+[node name="Score" type="Label"]
+offset_right = 377.0
+offset_bottom = 66.0
+text = "0"
+label_settings = SubResource("LabelSettings_ndoay")
+horizontal_alignment = 1

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cckiqnvm5batf"]
+
+[ext_resource type="Script" uid="uid://bgac7phcbn1sk" path="res://Scripts/zone_reboot.gd" id="1_e1yme"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atrxv"]
+size = Vector2(1283.61, 132)
+
+[node name="ZoneReboot" type="Area2D"]
+script = ExtResource("1_e1yme")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-12, 2)
+rotation = -3.14159
+scale = Vector2(1.52273, 1.30245)
+shape = SubResource("RectangleShape2D_atrxv")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
